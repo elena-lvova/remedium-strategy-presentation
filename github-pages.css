@@ -1,0 +1,10 @@
+/* GitHub Pages hosts the presentation only.
+   Feedback collection and the organizer dashboard remain on their dedicated app. */
+.feedback-section,
+.summary-section,
+.topnav__links a[href="#feedback"],
+.topnav__links a[href="#summary"],
+.topnav__mobile a[href="#feedback"],
+.topnav__mobile a[href="#summary"] {
+  display: none !important;
+}

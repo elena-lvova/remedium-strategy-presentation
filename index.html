@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ремедиум · Платформа данных, решений и HCP-взаимодействия</title>
+<meta name="description" content="Стратегическая презентация ГК «Ремедиум»: система взаимно усиливающих контуров данных, HCP-идентичности, вовлечения, контента и прогнозной аналитики.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,500,800&f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b1f26'/%3E%3Cpath d='M16 4a12 12 0 1 0 12 12' stroke='%232dd4bf' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3Ctext x='16' y='21' font-family='sans-serif' font-weight='700' font-size='13' fill='%232dd4bf' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E">
+
+<link rel="stylesheet" href="./base.css">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./components.css">
+<link rel="stylesheet" href="./github-pages.css">
+</head>
+<body>
+
+<a href="#main" class="sr-only">Перейти к содержимому</a>
+
+<div class="bg-grid" aria-hidden="true"></div>
+
+<header class="topnav" id="topnav">
+  <div class="topnav__inner">
+    <a href="#intro" class="brand" aria-label="Ремедиум — к началу презентации">
+      <svg class="brand__mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2" opacity="0.35"/>
+        <path d="M20 4a16 16 0 0 1 16 16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M20 36a16 16 0 0 1 -16 -16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+        <circle cx="20" cy="20" r="6.5" fill="currentColor"/>
+        <text x="20" y="24.5" font-family="'Cabinet Grotesk', sans-serif" font-weight="800" font-size="10" fill="var(--color-bg)" text-anchor="middle">R</text>
+      </svg>
+      <span class="brand__name">Ремедиум</span>
+    </a>
+    <nav class="topnav__links" aria-label="Разделы презентации">
+      <a href="#intro">Начало</a>
+      <a href="#hub">Карта стратегии</a>
+      <a href="#assets">Активы</a>
+      <a href="#packages">Пакеты</a>
+      <a href="#gov">Государство</a>
+      <a href="#feedback">Заметки</a>
+      <a href="#summary">Сводка</a>
+      <a href="./board.html" target="_blank" rel="noopener" class="topnav__board-link">Живая доска ↗</a>
+    </nav>
+    <button class="theme-toggle" data-theme-toggle aria-label="Переключить тёмную тему" type="button">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+    <button class="nav-burger" data-nav-burger aria-label="Открыть меню" aria-expanded="false" type="button">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="topnav__mobile" data-nav-mobile aria-label="Разделы презентации (мобильное меню)">
+    <a href="#intro">Начало</a>
+    <a href="#hub">Карта стратегии</a>
+    <a href="#assets">Активы</a>
+    <a href="#packages">Пакеты</a>
+    <a href="#gov">Государство</a>
+    <a href="#feedback">Заметки</a>
+    <a href="#summary">Сводка</a>
+    <a href="./board.html" target="_blank" rel="noopener">Живая доска ↗</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ===================== INTRO — обложка ===================== -->
+  <section class="intro-cover" id="intro">
+    <div class="intro-cover__inner">
+      <p class="intro-cover__eyebrow">Стратегическая сессия · Концепция для обсуждения</p>
+      <div class="intro-cover__brand">ГК «Ремедиум»</div>
+      <h1 class="intro-cover__title">От отдельных активов<br>к платформе данных, решений<br>и их реализации</h1>
+
+      <div class="intro-cover__sequence" aria-label="Цикл создания ценности">
+        <span>рынок</span><i aria-hidden="true">→</i>
+        <span>аналитика</span><i aria-hidden="true">→</i>
+        <span>сегментация</span><i aria-hidden="true">→</i>
+        <span>прогноз</span><i aria-hidden="true">→</i>
+        <span>коммуникация</span><i aria-hidden="true">→</i>
+        <span>измерение</span><i aria-hidden="true">→</i>
+        <span>следующее действие</span>
+      </div>
+
+      <div class="intro-cover__footer">
+        <span>Рабочая версия для совместного обсуждения</span>
+        <a href="#value-loop">Логика платформы <b aria-hidden="true">↓</b></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== VALUE LOOP — связанный контур ===================== -->
+  <section class="value-loop" id="value-loop">
+    <div class="value-loop__head">
+      <div class="value-loop__heading">
+        <p class="value-loop__eyebrow">Куда движемся</p>
+        <h2>Связанный контур ценности</h2>
+        <p>Каждый этап отвечает на отдельный вопрос клиента и оставляет данные, ресурсы и инсайты для следующего.</p>
+      </div>
+      <aside class="value-loop__model">
+        <span>Целевая модель</span>
+        <p>Единая платформа, которая помогает фармкомпании видеть рынок и себя, выбирать приоритеты, взаимодействовать с целевой аудиторией и показывать результат.</p>
+      </aside>
+    </div>
+
+    <ol class="value-chain" aria-label="Этапы связанного контура ценности">
+      <li style="--step-color:#0b2545"><span>01</span><strong>Рынок</strong></li>
+      <li style="--step-color:#00a992"><span>02</span><strong>Аналитика</strong></li>
+      <li style="--step-color:#3d7bff"><span>03</span><strong>Сегментация</strong></li>
+      <li style="--step-color:#a855f7"><span>04</span><strong>Прогноз</strong></li>
+      <li style="--step-color:#ff6b6b"><span>05</span><strong>Коммуникация</strong></li>
+      <li style="--step-color:#00c2a8"><span>06</span><strong>Измерение</strong></li>
+      <li style="--step-color:#1e3a5f"><span>07</span><strong>Следующее<br>действие</strong></li>
+    </ol>
+
+    <div class="value-loop__result">
+      <span>Результат каждого цикла</span>
+      <strong>Более точная картина рынка, более качественная сегментация и более обоснованное следующее действие.</strong>
+    </div>
+
+    <p class="value-loop__principle">Платформенность возникает не из интеграции всех продуктов и услуг, а из повторного использования данных, аудитории, контента и обратной связи.</p>
+    <a class="value-loop__next" href="#hub">Перейти к карте контуров <span aria-hidden="true">↓</span></a>
+  </section>
+
+  <!-- ===================== HUB — карта стратегии ===================== -->
+  <section class="hub-section hub-section--top" id="hub">
+    <div class="hub-circle-wrap">
+      <div class="hub__stage" aria-label="Карта контуров платформы">
+        <svg class="hub__lines" viewBox="0 0 100 100" aria-hidden="true">
+          <defs>
+            <marker id="hubArrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="4.5" markerHeight="4.5" orient="auto">
+              <path d="M0 0L8 4L0 8Z" class="hub-line-arrow"></path>
+            </marker>
+            <marker id="hubArrowActive" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5" markerHeight="5" orient="auto">
+              <path d="M0 0L8 4L0 8Z" class="hub-line-arrow hub-line-arrow--active"></path>
+            </marker>
+          </defs>
+          <circle cx="50" cy="50" r="37" class="hub-orbit"></circle>
+          <line x1="50" y1="15" x2="50" y2="39" class="hub-spoke"></line>
+          <line x1="82" y1="31" x2="61" y2="43" class="hub-spoke"></line>
+          <line x1="82" y1="69" x2="61" y2="57" class="hub-spoke"></line>
+          <line x1="50" y1="85" x2="50" y2="61" class="hub-spoke"></line>
+          <line x1="18" y1="69" x2="39" y2="57" class="hub-spoke"></line>
+          <line x1="18" y1="31" x2="39" y2="43" class="hub-spoke"></line>
+          <g class="hub-link-network" id="hubLinkNetwork"></g>
+        </svg>
+        <div class="hub__core" aria-hidden="true">
+          <span class="hub__core-mark">R</span>
+          <span class="hub__core-label">Ремедиум</span>
+        </div>
+        <div class="hub__nodes" id="hubNodes" role="list" aria-label="Контуры платформы"></div>
+      </div>
+    </div>
+
+    <div class="journey" id="journeyRoot"></div>
+  </section>
+
+  <!-- Drill-down panel (overlay) -->
+  <div class="drill" id="drillPanel" aria-hidden="true">
+    <div class="drill__backdrop" data-drill-close></div>
+    <div class="drill__sheet" role="dialog" aria-modal="true" aria-labelledby="drillTitle">
+      <button class="drill__close" data-drill-close aria-label="Закрыть панель">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="drill__head">
+        <p class="drill__index" id="drillIndex"></p>
+        <h3 class="drill__title" id="drillTitle"></h3>
+        <p class="drill__summary" id="drillSummary"></p>
+      </div>
+      <div class="drill-story-nav" id="drillStoryNav" aria-label="Этапы развития контура"></div>
+      <div class="drill-story" id="drillStory"></div>
+      <div class="drill-axes" id="drillAxes">
+        <p class="drill-axes__label">Краткая продуктовая проверка</p>
+        <div class="drill-axes__grid" id="drillAxesGrid"></div>
+      </div>
+      <div class="drill__body" id="drillBody"></div>
+      <div class="drill__connections">
+        <h4>Как это встраивается в общую идею</h4>
+        <div class="drill__connections-grid" id="drillConnections"></div>
+      </div>
+      <div class="drill__nav">
+        <button class="drill__nav-btn" id="drillPrev" type="button">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 6l-6 6 6 6"/></svg>
+          Предыдущий контур
+        </button>
+        <button class="drill__nav-btn drill__nav-btn--next" id="drillNext" type="button">
+          Следующий контур
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== ASSETS ===================== -->
+  <section class="section" id="assets">
+    <div class="section-head reveal">
+      <p class="section-head__eyebrow">Слайд 4</p>
+      <h2 class="section-head__title">Что уже есть в группе</h2>
+      <p class="section-head__lede">Активы можно соединить в продуктовый и коммерческий контур.</p>
+    </div>
+    <div class="assets-grid" id="assetsGrid"></div>
+  </section>
+
+  <!-- ===================== PACKAGES ===================== -->
+  <section class="section section--offset" id="packages">
+    <div class="section-head reveal">
+      <p class="section-head__eyebrow">Слайд 18</p>
+      <h2 class="section-head__title">Пакетные решения для фармкомпаний</h2>
+      <p class="section-head__lede">Семь готовых пакетов, каждый — комбинация нескольких контуров платформы. Нажмите на карточку, чтобы увидеть состав.</p>
+    </div>
+    <div class="packages-grid" id="packagesGrid"></div>
+  </section>
+
+  <!-- ===================== GOVERNMENT ===================== -->
+  <section class="section" id="gov">
+    <div class="section-head reveal">
+      <p class="section-head__eyebrow">Слайд 19</p>
+      <h2 class="section-head__title">Что предложить государству</h2>
+      <p class="section-head__lede">Возможная роль: независимый аналитический партнёр доступности и рационального использования лекарств.</p>
+    </div>
+    <div class="gov-layout reveal">
+      <ul class="gov-list" id="govList" role="list"></ul>
+      <aside class="gov-principle">
+        <p class="gov-principle__label">Принцип позиционирования</p>
+        <p class="gov-principle__text">Предлагаем аналитическую задачу:</p>
+        <p class="gov-principle__quote">помогаем видеть риск до того, как он становится дефицитом, жалобой пациентов или срывом программы.</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===================== PARTICIPANT FEEDBACK ===================== -->
+  <section class="feedback-section" id="feedback">
+    <div class="feedback-shell">
+      <div class="section-head reveal">
+        <p class="section-head__eyebrow">После презентации</p>
+        <h2 class="section-head__title">Перенесите заметки по каждому направлению</h2>
+        <p class="section-head__lede">Выберите направление, заполните четыре поля и сохраните. Можно отправлять направления по очереди.</p>
+      </div>
+
+      <div class="participant-card">
+        <label class="field-label" for="participantName">Имя и фамилия</label>
+        <input class="text-input" id="participantName" name="participantName" autocomplete="name" placeholder="Например, Елена Львова" data-testid="input-participant-name">
+        <label class="field-label" for="participantRole">Подразделение или роль <span>необязательно</span></label>
+        <input class="text-input" id="participantRole" name="participantRole" placeholder="Например, бизнес-развитие" data-testid="input-participant-role">
+      </div>
+
+      <div class="feedback-tabs" id="feedbackTabs" role="tablist" aria-label="Направления стратегии"></div>
+      <form class="feedback-form" id="feedbackForm">
+        <div class="feedback-form__head">
+          <div>
+            <p class="feedback-form__index" id="feedbackIndex"></p>
+            <h3 id="feedbackTitle"></h3>
+          </div>
+          <span class="feedback-form__status" id="feedbackStatus" aria-live="polite"></span>
+        </div>
+        <div class="feedback-grid" id="feedbackFields"></div>
+        <button class="feedback-submit" type="submit" data-testid="button-submit-feedback">Сохранить заметки по направлению</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===================== ORGANIZER SUMMARY ===================== -->
+  <section class="summary-section" id="summary">
+    <div class="summary-shell">
+      <div class="section-head">
+        <p class="section-head__eyebrow">Режим организатора</p>
+        <h2 class="section-head__title">Сводка комментариев</h2>
+        <p class="section-head__lede">Ответы группируются по направлению и четырём осям. Для доступа введите код организатора.</p>
+      </div>
+      <div class="summary-login" id="summaryLogin">
+        <label class="field-label" for="summaryKey">Код организатора</label>
+        <div class="summary-login__row">
+          <input class="text-input" id="summaryKey" type="password" autocomplete="off" placeholder="Введите код" data-testid="input-summary-key">
+          <button class="feedback-submit" id="summaryLoad" type="button" data-testid="button-load-summary">Открыть сводку</button>
+        </div>
+        <p class="form-message" id="summaryMessage" aria-live="polite"></p>
+      </div>
+      <div class="summary-content" id="summaryContent" hidden>
+        <div class="summary-toolbar">
+          <p id="summaryCount"></p>
+          <div class="summary-toolbar__actions">
+            <button class="summary-refresh" id="summaryExport" type="button" data-testid="button-export-summary">Скачать для Excel (.csv)</button>
+            <button class="summary-refresh" id="summaryRefresh" type="button" data-testid="button-refresh-summary">Обновить</button>
+          </div>
+        </div>
+        <div class="summary-list" id="summaryList"></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="brand brand--footer">
+      <svg class="brand__mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2" opacity="0.35"/>
+        <path d="M20 4a16 16 0 0 1 16 16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="6.5" fill="currentColor"/>
+      </svg>
+      <span>ГК «Ремедиум»</span>
+    </div>
+    <p class="footer__note">Материал для обсуждения · Сентябрь 2026 · Внутренний стратегический документ</p>
+  </div>
+</footer>
+
+<script src="./data-v2.js"></script>
+<script src="./app.js"></script>
+<script data-pplx-inline-edit>
+(function () {
+  if (window === window.top) return;
+
+  const allowedParentOrigins = ["https://www.perplexity.ai","https://perplexity.ai","https://testing.perplexity.ai","https://staging.perplexity.ai","https://*.preview.i.perplexity.ai","http://perplexity.localhost","http://localhost:1420","http://127.0.0.1:1420","http://localhost:3000","http://127.0.0.1:3000","http://localhost:5173","http://127.0.0.1:5173"];
+  const MAX_FONT_BYTES = 500 * 1024;
+  const MAX_TOTAL_FONT_BYTES = 2 * 1024 * 1024;
+  let scrollForwarding = false;
+  let scrollRaf = 0;
+  let trustedTopOrigin = null;
+
+  // Allow entries like "https://*.preview.i.perplexity.ai" — the wildcard
+  // matches a single DNS label (no dots), so "https://*.foo" cannot stretch
+  // across multiple labels.
+  function matchesAllowedOrigin(origin) {
+    if (!origin) return false;
+    for (const entry of allowedParentOrigins) {
+      if (!entry.includes("*")) {
+        if (entry === origin) return true;
+        continue;
+      }
+      const pattern = new RegExp(
+        "^" +
+          entry.replace(/[.+?^${}()|[\]\\]/g, "\\$&").replace(/\*/g, "[^.]+") +
+          "$",
+      );
+      if (pattern.test(origin)) return true;
+    }
+    return false;
+  }
+
+  // Trust decision: when the sender is same-origin-visible (event.origin is a
+  // real origin like https://www.perplexity.ai) we trust event.origin directly.
+  // When event.origin is "null" (opaque broker srcdoc), we fall back to the
+  // broker's stamped `parentOrigin` to identify the top window. The fallback
+  // is claim-only — we rely on the browser's native `targetOrigin` enforcement
+  // on the response path (see postToTrustedTop) to ensure replies can't be
+  // delivered to anyone but the actual top window of that claimed origin.
+  function getTrustedParentOrigin(event) {
+    const forwardedParentOrigin =
+      typeof event.data.parentOrigin === "string" ? event.data.parentOrigin : null;
+    const parentOrigin = event.origin === "null" ? forwardedParentOrigin : event.origin;
+    return matchesAllowedOrigin(parentOrigin) ? parentOrigin : null;
+  }
+
+  // All responses go to window.top with targetOrigin = the allowlisted origin.
+  // An attacker that iframes us inside their own null-origin broker can claim
+  // any parentOrigin they like, but the browser will drop the reply whenever
+  // the real top's origin doesn't match — so the screenshot never leaves.
+  function postToTrustedTop(message) {
+    if (!trustedTopOrigin) return;
+    try {
+      window.top.postMessage(message, trustedTopOrigin);
+    } catch (_error) {}
+  }
+
+  function inlineAll(original, clone) {
+    if (original.nodeType !== 1 || clone.nodeType !== 1) return;
+
+    try {
+      const computedStyle = getComputedStyle(original);
+      // cssText on a computed style is the serialized declaration in modern
+      // Chromium/Safari — a single read beats enumerating ~400 longhand
+      // properties. Firefox returns "" here, so we fall back on empty.
+      const serialized = computedStyle.cssText;
+      if (serialized) {
+        clone.style.cssText = serialized;
+      } else {
+        const parts = new Array(computedStyle.length);
+        for (let index = 0; index < computedStyle.length; index += 1) {
+          const property = computedStyle[index];
+          parts[index] = `${property}:${computedStyle.getPropertyValue(property)};`;
+        }
+        clone.style.cssText = parts.join("");
+      }
+    } catch (_error) {}
+
+    const originalChildren = original.children;
+    const clonedChildren = clone.children;
+    for (
+      let index = 0;
+      index < originalChildren.length && index < clonedChildren.length;
+      index += 1
+    ) {
+      inlineAll(originalChildren[index], clonedChildren[index]);
+    }
+  }
+
+  function extractFontUrl(srcValue) {
+    const matches = [
+      ...srcValue.matchAll(
+        /url\(["']?([^"')]+)["']?\)(?:\s*format\(["']?([^"')]+)["']?\))?/gi,
+      ),
+    ];
+    if (matches.length === 0) return null;
+    const woff2 = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff2"));
+    if (woff2) return woff2[1];
+    const woff = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff"));
+    if (woff) return woff[1];
+    return matches[0][1];
+  }
+
+  // Cache resolved font URL -> data URI across captures. Fonts on a page
+  // essentially never change, and a batch run emits multiple captures back to
+  // back — without this we'd refetch + re-base64 every time.
+  const fontDataUriCache = new Map();
+  const SRC_DECLARATION_RE = /src\s*:\s*[^;}]+/i;
+
+  async function fetchAsDataUri(url) {
+    if (fontDataUriCache.has(url)) return fontDataUriCache.get(url);
+    let dataUri = null;
+    try {
+      const response = await fetch(url, { mode: "cors", credentials: "omit" });
+      if (response.ok) {
+        const blob = await response.blob();
+        if (blob.size <= MAX_FONT_BYTES) {
+          dataUri = await new Promise((resolve) => {
+            const reader = new FileReader();
+            reader.onloadend = () =>
+              resolve(typeof reader.result === "string" ? reader.result : null);
+            reader.onerror = () => resolve(null);
+            reader.readAsDataURL(blob);
+          });
+        }
+      }
+    } catch (_error) {
+      dataUri = null;
+    }
+    fontDataUriCache.set(url, dataUri);
+    return dataUri;
+  }
+
+  function collectFontFaceRuleTexts() {
+    const rules = [];
+    for (const sheet of document.styleSheets) {
+      let cssRules;
+      try {
+        cssRules = sheet.cssRules;
+      } catch (_error) {
+        continue;
+      }
+      if (!cssRules) continue;
+      for (const rule of cssRules) {
+        const cssText = rule.cssText || "";
+        if (cssText.startsWith("@font-face")) rules.push(cssText);
+      }
+    }
+    return rules;
+  }
+
+  async function buildInlinedFontCss() {
+    const ruleTexts = collectFontFaceRuleTexts();
+    if (ruleTexts.length === 0) return null;
+
+    const resolved = ruleTexts.map((cssText) => {
+      if (!SRC_DECLARATION_RE.test(cssText)) return null;
+      const srcMatch = cssText.match(/src\s*:\s*([^;}]+)[;}]/i);
+      if (!srcMatch) return null;
+      const url = extractFontUrl(srcMatch[1]);
+      if (!url) return null;
+      try {
+        return { cssText, url: new URL(url, document.baseURI).href };
+      } catch (_error) {
+        return null;
+      }
+    });
+
+    const dataUris = await Promise.all(
+      resolved.map((entry) => (entry ? fetchAsDataUri(entry.url) : Promise.resolve(null))),
+    );
+
+    const inlined = [];
+    let totalBytes = 0;
+    for (let index = 0; index < resolved.length; index += 1) {
+      const entry = resolved[index];
+      const dataUri = dataUris[index];
+      if (!entry || !dataUri) continue;
+      const approxBytes = dataUri.length * 0.75;
+      if (totalBytes + approxBytes > MAX_TOTAL_FONT_BYTES) break;
+      totalBytes += approxBytes;
+      inlined.push(entry.cssText.replace(SRC_DECLARATION_RE, `src: url("${dataUri}")`));
+    }
+    return inlined.length > 0 ? inlined.join("\n") : null;
+  }
+
+  function stripExternal(clone) {
+    const images = clone.querySelectorAll("img");
+    for (let index = 0; index < images.length; index += 1) {
+      const src = images[index].getAttribute("src");
+      if (src && !src.startsWith("data:")) images[index].removeAttribute("src");
+    }
+
+    const elements = clone.querySelectorAll("*");
+    for (let index = 0; index < elements.length; index += 1) {
+      const style = elements[index].style.cssText;
+      if (style && style.includes("url(")) {
+        elements[index].style.cssText = style.replace(
+          /url\(["']?(?!data:)[^)"']*["']?\)/gi,
+          "none",
+        );
+      }
+    }
+  }
+
+  function emitScroll() {
+    scrollRaf = 0;
+    if (!scrollForwarding) return;
+    postToTrustedTop({
+      type: "INLINE_EDIT_SCROLL",
+      scrollX: window.scrollX,
+      scrollY: window.scrollY,
+    });
+  }
+
+  window.addEventListener(
+    "scroll",
+    function () {
+      if (!scrollForwarding || scrollRaf) return;
+      scrollRaf = requestAnimationFrame(emitScroll);
+    },
+    { passive: true, capture: true },
+  );
+
+  async function handleCaptureRequest(event) {
+    const requestId = event.data.requestId;
+    const scrollX = window.scrollX;
+    const scrollY = window.scrollY;
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    function postResult(dataUrl) {
+      postToTrustedTop({
+        type: "INLINE_EDIT_SCREENSHOT_RESULT",
+        requestId,
+        dataUrl,
+        scrollX,
+        scrollY,
+      });
+    }
+
+    try {
+      // Wait for any pending web fonts to resolve so both inline metrics and
+      // the @font-face inlining below see the same loaded faces.
+      if (document.fonts && document.fonts.ready) {
+        try {
+          await document.fonts.ready;
+        } catch (_error) {}
+      }
+
+      const clone = document.documentElement.cloneNode(true);
+      inlineAll(document.documentElement, clone);
+
+      const removedNodes = clone.querySelectorAll("script,link[rel=\"stylesheet\"],style");
+      for (let index = 0; index < removedNodes.length; index += 1) {
+        removedNodes[index].remove();
+      }
+
+      stripExternal(clone);
+
+      // Re-embed web fonts as data-URI @font-face rules so the SVG rasterizer
+      // can resolve them — external font URLs aren't fetched during
+      // foreignObject rendering, which would otherwise force a fallback face
+      // and change text metrics.
+      const inlinedFontCss = await buildInlinedFontCss();
+      if (inlinedFontCss) {
+        const styleEl = document.createElement("style");
+        styleEl.textContent = inlinedFontCss;
+        const head = clone.querySelector("head");
+        if (head) head.appendChild(styleEl);
+        else clone.insertBefore(styleEl, clone.firstChild);
+      }
+
+      const html = new XMLSerializer().serializeToString(clone);
+      const svg =
+        `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}">` +
+        '<foreignObject width="100%" height="100%">' +
+        `<div xmlns="http://www.w3.org/1999/xhtml" style="width:${width}px;height:${height}px;overflow:hidden">` +
+        `<div style="position:relative;left:-${scrollX}px;top:-${scrollY}px">` +
+        html +
+        "</div></div></foreignObject></svg>";
+      const svgUrl = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+      const image = new Image();
+      image.onload = function () {
+        const canvas = document.createElement("canvas");
+        canvas.width = width;
+        canvas.height = height;
+        canvas.getContext("2d").drawImage(image, 0, 0);
+        postResult(canvas.toDataURL("image/png"));
+      };
+      image.onerror = function () {
+        postResult(null);
+      };
+      image.src = svgUrl;
+    } catch (_error) {
+      postResult(null);
+    }
+  }
+
+  window.addEventListener("message", function (event) {
+    if (!event.data) return;
+    // Only accept messages from the direct parent frame. Blocks sibling /
+    // unrelated-window postMessage senders that could otherwise reach us.
+    if (event.source !== window.parent) return;
+
+    const trustedParentOrigin = getTrustedParentOrigin(event);
+    if (!trustedParentOrigin) return;
+    trustedTopOrigin = trustedParentOrigin;
+
+    if (event.data.type === "INLINE_EDIT_SCROLL_START") {
+      scrollForwarding = true;
+      emitScroll();
+      return;
+    }
+
+    if (event.data.type === "INLINE_EDIT_SCROLL_STOP") {
+      scrollForwarding = false;
+      if (scrollRaf) cancelAnimationFrame(scrollRaf);
+      scrollRaf = 0;
+      return;
+    }
+
+    if (event.data.type !== "INLINE_EDIT_CAPTURE_REQUEST") return;
+
+    handleCaptureRequest(event);
+  });
+})();
+
+
+</script></body>
+</html>
